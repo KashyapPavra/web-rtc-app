@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <img src="images/adani.png" width="200px">
+    <h1 class="text-center">Video Chat</h1>
     <div class="video-container" ref="video-container">
-      <video class="video-here" ref="video-here" autoplay></video>  
+      <video class="video-here" ref="video-here" autoplay muted="muted"></video>  
       <video class="video-there" ref="video-there" autoplay></video>
       <div class="text-right" v-for="(name,userId) in others" :key="userId">
         <button @click="startVideoChat(userId)" v-text="`Talk with ${name}`"/>
@@ -55,7 +55,7 @@ export default {
       } 
       return this.peers[userId];
     },    async setupVideoChat() {    
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true});
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
       const videoHere = this.$refs['video-here'];
       videoHere.srcObject = stream;
       this.stream = stream;      
