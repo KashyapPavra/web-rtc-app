@@ -1976,6 +1976,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2036,8 +2037,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context.next = 2;
                 return navigator.mediaDevices.getUserMedia({
-                  video: true,
-                  audio: true
+                  video: true
                 });
 
               case 2:
@@ -51862,7 +51862,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("h1", { staticClass: "text-center" }, [_vm._v("Video Chat")]),
+    _c("img", { attrs: { src: "images/adani.png", width: "200px" } }),
     _vm._v(" "),
     _c(
       "div",

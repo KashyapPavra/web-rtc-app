@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="images/logo/adani.png" width="200px">
+    <img src="images/adani.png" width="200px">
     <div class="video-container" ref="video-container">
       <video class="video-here" ref="video-here" autoplay></video>  
       <video class="video-there" ref="video-there" autoplay></video>
