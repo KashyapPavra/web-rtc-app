@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center">Laravel Video Chat</h1>
+    <h1 class="text-center">Video Chat</h1>
     <div class="video-container" ref="video-container">
       <video class="video-here" ref="video-here" autoplay></video>  
       <video class="video-there" ref="video-there" autoplay></video>
