@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{webrtc-app-kashyap.herokuapp.com}%{REQUEST_URI} [L,R=301]
