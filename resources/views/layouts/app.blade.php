@@ -23,8 +23,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/video_chat') }}">
-                    {{ config('app.name', 'Video Chat') }}
+                <a class="navbar-brand" href="https://webrtc-app-kashyap.herokuapp.com/video_chat">
+                    <img src="images/logo/adani.png" width="200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

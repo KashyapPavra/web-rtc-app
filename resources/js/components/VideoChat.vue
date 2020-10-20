@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center">Video Chat</h1>
+    <img src="images/logo/adani.png" width="200px">
     <div class="video-container" ref="video-container">
       <video class="video-here" ref="video-here" autoplay></video>  
       <video class="video-there" ref="video-there" autoplay></video>
@@ -9,8 +9,11 @@
       </div>
     </div>
   </div>
-</template><script>import Pusher from 'pusher-js';
-import Peer from 'simple-peer';export default {
+</template>
+<script>
+import Pusher from 'pusher-js';
+import Peer from 'simple-peer';
+export default {
   props: ['user', 'others', 'pusherKey', 'pusherCluster'],
   data() {
     return {
@@ -51,10 +54,8 @@ import Peer from 'simple-peer';export default {
         });        this.peers[userId] = peer;
       } 
       return this.peers[userId];
-    },    async setupVideoChat() {
-      // To show pusher errors
-      // Pusher.logToConsole = true;      
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+    },    async setupVideoChat() {    
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true});
       const videoHere = this.$refs['video-here'];
       videoHere.srcObject = stream;
       this.stream = stream;      
