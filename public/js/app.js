@@ -2037,7 +2037,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context.next = 2;
                 return navigator.mediaDevices.getUserMedia({
-                  video: true
+                  video: true,
+                  audio: true
                 });
 
               case 2:
@@ -51862,7 +51863,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("img", { attrs: { src: "images/adani.png", width: "200px" } }),
+    _c("h1", { staticClass: "text-center" }, [_vm._v("Video Chat")]),
     _vm._v(" "),
     _c(
       "div",
@@ -51871,7 +51872,8 @@ var render = function() {
         _c("video", {
           ref: "video-here",
           staticClass: "video-here",
-          attrs: { autoplay: "" }
+          attrs: { autoplay: "", muted: "muted" },
+          domProps: { muted: true }
         }),
         _vm._v(" "),
         _c("video", {
