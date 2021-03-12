@@ -17,7 +17,7 @@ This is a 1-1 WebRTC App with user authentication
 
 ### Technologies Used
 
-Laravel
-VueJS
-PusherJS
-Simple Peer
+-   Laravel
+-   VueJS
+-   PusherJS
+-   Simple Peer
